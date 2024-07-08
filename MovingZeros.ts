@@ -1,5 +1,10 @@
-function moveZerosTS(arr: any[]): any[] {
-    let res_arr: any[] = []
+type arrayType = Array<number | string | boolean >
+
+// todo
+// тип массива с разными значениями (строки, числа, boolean)
+
+function moveZerosTS(arr: arrayType = []): arrayType {
+    let res_arr: arrayType = []
     let count: number = 0
 
     for (var i: number = 0; i < arr.length; i++) {
@@ -19,3 +24,4 @@ function moveZerosTS(arr: any[]): any[] {
 }
 
 console.log(moveZerosTS([1,2,0,1,0,1,0,3,0,1]))
+console.log(moveZerosTS([1,2,0,1,0,1,0,[3],0,1]))

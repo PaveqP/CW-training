@@ -10,5 +10,5 @@ interface ITodo {
 
 const new_obj: customPick<ITodo, 'description' | 'completed'> = {
     description: 'vd',
-    completed: false
+    completed: false,
 }

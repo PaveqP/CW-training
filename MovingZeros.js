@@ -1,3 +1,5 @@
+// todo
+// тип массива с разными значениями (строки, числа, boolean)
 function moveZerosTS(arr) {
     var res_arr = [];
     var count = 0;
@@ -16,3 +18,4 @@ function moveZerosTS(arr) {
     return res_arr;
 }
 console.log(moveZerosTS([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]));
+console.log(moveZerosTS([1, 2, 0, 1, 0, 1, 0, [3], 0, 1]));
