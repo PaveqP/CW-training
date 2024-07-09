@@ -15,3 +15,7 @@ const new_obj2: customOmit<ITodo, 'description' | 'completed'> = {
     title: 'vfdf'
 }
 
+type Result = customExclude<'a' | 'b' | 'c', 'a'>
+
+const new_obj3: Result = 'b'
+const new_obj4: Result = 'a'
