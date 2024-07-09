@@ -1,5 +1,8 @@
+type customExclude<T, K> = T extends K ? never : T
+
+
 type customOmit<T, K extends keyof T> = {
-    [key in Exclude<keyof T, K>]: T[key]
+    [key in customExclude<keyof T, K>]: T[key]
 }
 
 interface ITodo {
@@ -11,3 +14,4 @@ interface ITodo {
 const new_obj2: customOmit<ITodo, 'description' | 'completed'> = {
     title: 'vfdf'
 }
+

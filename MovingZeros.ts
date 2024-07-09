@@ -1,9 +1,9 @@
-type arrayType = Array<number | string | boolean >
-
+type arrayType = Array<number | boolean >
+// type arrayType = number[] & boolean[]
 // todo
 // тип массива с разными значениями (строки, числа, boolean)
 
-function moveZerosTS(arr: arrayType = []): arrayType {
+function moveZerosTS(arr: arrayType): arrayType {
     let res_arr: arrayType = []
     let count: number = 0
 
@@ -24,4 +24,4 @@ function moveZerosTS(arr: arrayType = []): arrayType {
 }
 
 console.log(moveZerosTS([1,2,0,1,0,1,0,3,0,1]))
-console.log(moveZerosTS([1,2,0,1,0,1,0,[3],0,1]))
+console.log(moveZerosTS([1,2,"vvfvf",1,0,"v",0,[3],0,1]))
